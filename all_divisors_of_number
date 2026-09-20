@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int i=1;
+    int k=0;
+    int arr[n];
+    while(i<=n){
+        if(n%i==0){
+            arr[k]=i;
+            k++;
+        }
+        i++;
+    }
+    for(int j=0;j<k;j++){
+        printf("%d ",arr[j]);
+    }
+}
